@@ -1,2 +1,3 @@
 # wf-sequence-DualProcess
-WF sequence experiment with MAL-adapted to have both recognition and recall.  Paired testing
+WF sequence experiment with MAL-adapted to have both recognition and recall.  Paired testing.
+At test, each echo is normed, and it's intensity measured.  If this is not above some variable criterion, the echo is resubmitted, normed and tested against each individual trace. If there is a trace that is similar enough to the returned echo (of the echo) based on a fixed criterion (that is fairly low as we are testing indivual, not aggregated, traces).  This trace, or the trace with the maximum similarity value if more than one, is then compared to the probe. If it's similarity is above the current decision criterion (flexible one) then it's called old, and this is recall. If not, the probe item is rejected as old, implementing recall to reject.
